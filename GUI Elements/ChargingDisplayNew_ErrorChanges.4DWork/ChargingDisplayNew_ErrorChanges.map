@@ -1,0 +1,92 @@
+linked : 13    main 0002FC
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  183:000305 
+
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  453:000307   455:00030f   456:000318   457:000321   458:00032a   459:000333   460:00033b   461:000341 
+  472:00034c   478:00035d   479:000364   480:00036b   481:000372   482:000379   483:000380   484:000387 
+  485:00038e   486:000395   487:00039c   488:0003a3   489:0003aa   490:0003b1   491:0003b8   492:0003bf 
+  493:0003c6   494:0003cd   495:0003d4   496:0003db   497:0003e2   498:0003e9   499:0003f0   500:0003f7 
+  501:0003fe   502:000405   503:00040c   504:000413   505:00041a   506:000421   507:000428   508:00042f 
+  509:000436   510:00043d   511:000444   512:00044a   515:00045b   517:000469   518:000475   519:000481 
+  521:00048d   522:0004a5   526:0004cb   527:0004d5   528:0004dc   529:0004f4   530:000501   531:00050d 
+  532:000516   533:000527   541:00053d   544:000544   548:00054c   549:000554   550:00055b   553:00055b 
+  554:000566   555:00056f   556:000578   558:00058a   559:000599   560:0005a1   561:0005a7   562:0005b1 
+  563:0005b9   564:0005c2   565:0005ca   566:0005cf   568:0005d8   569:0005e0   570:0005e9   571:0005f5 
+  575:000600   578:00060a   579:00061d   581:000621   583:000628   584:000632   585:000645   586:00064d 
+  587:000653   588:00065c   589:000664   590:00066d   591:000672   593:00067b   594:00068e   595:00069a 
+  596:0006a6   600:0006b1   602:0006ba   605:0006c1   607:0006d3   608:0006d8   610:0006e1   612:0006eb 
+  613:0006f4   615:000706   616:00070b   618:000714   619:000726   621:00072e   622:000737   624:000749 
+  625:00074e   627:000757   628:00075f   630:000767   631:000770   632:000778   633:00077e   641:000784 
+  642:00078f   643:0007ad   644:0007bb   645:0007d8   647:0007de   648:0007e6   649:0007ef   651:0007f8 
+  652:000800   653:000806   656:00080c   657:000817   658:000822   660:00082b   661:000831   662:000838 
+  664:00083e   665:000846   666:000856   667:00085d   668:000863   668:00086b   669:000874   674:00088f 
+  677:000898   678:000898   680:000898   681:000898   683:000898   685:000898   687:000898   688:000898 
+  689:000898   691:000898   693:000898   694:000898   695:000898   696:000898   697:0008a9   698:0008b9 
+  699:0008b9   700:0008c2   701:0008ca   702:0008d4   704:0008dd   705:0008e6   707:0008ef   708:0008fc 
+  709:000904   710:00090f   712:00091c   715:000923   718:00092f   719:000937   721:000943   724:000950 
+  725:000958   727:000959   729:000959 
+
+linked : 12    DoGFXObjects 00095A
+linked : 11    UpdateObjects 00095B
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  389:00095b   390:00096b   391:00097e   392:00098d   393:000998   394:0009b6   395:0009bf   397:0009cb 
+  399:0009d4   399:0009dc   401:0009e2   402:0009ec   403:0009f4   404:0009fe   405:000a07   406:000a1c 
+  407:000a25   408:000a2f   410:000a39   411:000a71   412:000a7a   413:000a86   414:000a8f   415:000a98 
+  416:000aa2   417:000ab9   418:000ac2   419:000ad9   420:000ae2   421:000af4   423:000b18   424:000b2e 
+  425:000b37   426:000b50   428:000b74   429:000b8a   430:000b93   431:000ba0   433:000bbe   434:000bc7 
+  435:000bdb   439:000bf6 
+
+linked : 10    ActivateForm 000C04
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  344:000c04   345:000c0d   346:000c31   347:000c3f   351:000c4f   353:000c55   354:000c63   355:000c73 
+  356:000c79   360:000c7f   361:000ca3   362:000cb2   363:000cb7   364:000cbb   366:000ccc   367:000cdf 
+  369:000ceb   370:000cf5   371:000cfd   372:000d06   373:000d0e   379:000d22   380:000d3a   381:000d47 
+
+linked : 9     ledDigitsDisplay 000D5E
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  309:000d60   309:000d73   310:000d74   311:000d83   312:000d8a   313:000d91   314:000d91   315:000d9a 
+  317:000da7   319:000db3   320:000dc4   321:000dcc   322:000dd6   323:000dda   324:000de4   325:000def 
+  326:000e0b   327:000e1a   328:000e34   329:000e3c   331:000e45   334:000e4b   335:000e59   336:000e75 
+
+linked : 8     TurnOffButtons 000E86
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  291:000e86   292:000e9e   293:000ea7   294:000eb7   295:000ebe   296:000ecb   297:000ee2   298:000ef0 
+
+linked : 7     WriteObject 000F01
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  248:000f01   249:000f09   250:000f11   252:000f12   253:000f25   254:000f2c   255:000f4a   255:000f4a 
+  256:000f4a   257:000f5f   258:000f62   258:000f62   258:000f62   260:000f69   261:000f72   262:000f81 
+  263:000f8a   264:000f92   265:000f9f   267:000fab   270:000fb7   270:000fc8   271:000fd8   273:000fe2 
+  275:000feb   276:000ff3   277:001001   278:00100f   280:001010   281:001018   282:001024   284:001025 
+  285:001033   286:00103d 
+
+linked : 6     ReadObject 00103E
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  225:00103e   227:001048   228:001057   229:00105f   230:001068   231:00107b   232:00108e   233:001096 
+  235:0010a3   236:0010b3   236:0010e3   239:0010e9 
+
+linked : 5     SendReport 0010F8
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  213:0010f8   214:001100   215:001108   216:001110   217:00111b   218:001123 
+
+linked : 4     seroutOcs 00112A
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  208:00112a   209:001132 
+
+linked : 3     nak0 001139
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  203:001139   204:001141 
+
+linked : 2     seroutCS 001148
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+  198:001148   199:001150 
+
+linked : 1     PrintStrings 00115A
+ stmt:Offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset  stmt:offset
+    3:00115c     4:00116b     5:001170     7:00117d     9:001186     9:00119e    10:00119f    11:0011ab 
+   14:0011b7    15:0011c0    16:0011e7    17:0011f5    19:00121e    20:00123c    21:001244    22:001254 
+   26:00125c    27:001268    28:001274    30:00127c    32:00128e    33:001293    34:001299    35:0012a4 
+   36:0012ac    37:0012b4    40:0012c5    41:0012d5    42:0012df    43:0012e9    44:0012f5    45:001301 
+   46:001301    47:00130a    49:001318    51:001323 
+

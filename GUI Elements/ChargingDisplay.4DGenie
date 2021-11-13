@@ -1,0 +1,718 @@
+﻿Version     0.0
+Platform    uLCD-70DT-L
+PlatRes     480x800
+Depends
+end
+Options
+    Genie
+    Speed                        200000
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  1
+    DestBank                     0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+    MaxString                    75
+    ComPort                      1
+    ComTX1pinIdx                 0
+    ComRX1pinIdx                 0
+    FileSystem                   FATfs
+    FlashEraseOption             Optimal
+    SPIenable                    0
+    SPIsdo                       3
+    SPIsdi                       2
+    SPIsck                       1
+    FlashGT16MB                  No
+end
+Form
+    Name                         Form0
+    Alias                        Form0
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits0
+    Alias                        PVoltageDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          24
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits1
+    Alias                        ChargeCurrentDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          108
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits2
+    Alias                        MaxTempDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          200
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits3
+    Alias                        SOCDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          292
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits4
+    Alias                        AvgVoltageDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          380
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext0
+    Alias                        PVoltageLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Pack Voltage'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          28
+    Transparent                  Yes
+    Width                        70
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext1
+    Alias                        ChargeCurrentLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Charge Current'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          112
+    Transparent                  Yes
+    Width                        74
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext2
+    Alias                        MaxTempLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Highest Temp'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          224
+    Transparent                  Yes
+    Width                        185
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext3
+    Alias                        SOCLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'SOC %'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          316
+    Transparent                  Yes
+    Width                        97
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext4
+    Alias                        AvgVoltageLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Avg Voltage'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          384
+    Transparent                  Yes
+    Width                        70
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext5
+    Alias                        CellDeltaLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Cell Δ'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         639
+    Top                          49
+    Transparent                  Yes
+    Width                        99
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits5
+    Alias                        CellDeltaDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         495
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          25
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits6
+    Alias                        LowCellDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         495
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          109
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext6
+    Alias                        LowCellLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Low Cell'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         639
+    Top                          133
+    Transparent                  Yes
+    Width                        78
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext7
+    Alias                        HighCellLbel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'High Cell'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         639
+    Top                          225
+    Transparent                  Yes
+    Width                        84
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits7
+    Alias                        HighCellDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         495
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          201
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext8
+    Alias                        BalanceEnableLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Balance Enable'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         368
+    Top                          192
+    Transparent                  Yes
+    Width                        80
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext9
+    Alias                        ChargeEnableLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Charge Enable'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         576
+    Top                          276
+    Transparent                  Yes
+    Width                        74
+    WordWrap                     Yes
+end
+4Dbutton
+    Name                         4Dbutton0
+    Alias                        StopButton
+    Height                       64
+    Left                         352
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         64x64
+    Style                        Red
+    Top                          12
+    Type                         Button02
+    Width                        64
+    OnChanged                    ''
+end
+StaticText
+    Name                         Statictext10
+    Alias                        StopLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      STOP
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         360
+    Top                          80
+    Transparent                  Yes
+    Width                        51
+    WordWrap                     Yes
+end
+4Dbutton
+    Name                         4Dbutton1
+    Alias                        NextPageButton
+    Height                       48
+    Left                         740
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          424
+    Type                         Button01
+    Width                        48
+    OnChanged                    Form1Activate
+end
+4Dbutton
+    Name                         4Dbutton3
+    Alias                        4Dbutton3
+    Height                       48
+    Left                         312
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Blue
+    Top                          196
+    Type                         Button02
+    Width                        48
+    OnChanged                    ''
+end
+4Dbutton
+    Name                         4Dbutton4
+    Alias                        4Dbutton4
+    Height                       48
+    Left                         508
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Blue
+    Top                          276
+    Type                         Button02
+    Width                        48
+    OnChanged                    ''
+end
+UserLed
+    Name                         Userled0
+    Alias                        DischargeLED
+    Active                       No
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             clBtnFace
+    Bevel.InnerHighlight         clLime
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            0x005100
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             None
+    Bevel.Innerwidth             1
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                Yes
+    Height                       31
+    Left                         512
+    OutlineColor                 BLACK
+    OutlineWidth                 0
+    PaletteEx.High1              clRed
+    PaletteEx.High2              BLACK
+    PaletteEx.Low1               0x000051
+    PaletteEx.Low2               BLACK
+    Top                          348
+    Width                        43
+    OnChanged                    ''
+end
+UserLed
+    Name                         Userled1
+    Alias                        ChargeLED
+    Active                       No
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             clBtnFace
+    Bevel.InnerHighlight         clLime
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            0x005100
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             None
+    Bevel.Innerwidth             1
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                Yes
+    Height                       31
+    Left                         512
+    OutlineColor                 BLACK
+    OutlineWidth                 0
+    PaletteEx.High1              clRed
+    PaletteEx.High2              BLACK
+    PaletteEx.Low1               0x000051
+    PaletteEx.Low2               BLACK
+    Top                          404
+    Width                        43
+    OnChanged                    ''
+end
+StaticText
+    Name                         Statictext13
+    Alias                        Statictext13
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Discharge
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         576
+    Top                          352
+    Transparent                  Yes
+    Width                        92
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext14
+    Alias                        Statictext14
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Charge
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         576
+    Top                          408
+    Transparent                  Yes
+    Width                        67
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits8
+    Alias                        AHrDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         260
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  0x005100
+    Top                          112
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext15
+    Alias                        Statictext15
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'A Hr'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         404
+    Top                          136
+    Transparent                  Yes
+    Width                        42
+    WordWrap                     Yes
+end
+Form
+    Name                         Form1
+    Alias                        Form1
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+4Dbutton
+    Name                         4Dbutton2
+    Alias                        PrevPageButton
+    Height                       48
+    Left                         8
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          428
+    Type                         Button01
+    Width                        48
+    OnChanged                    Form0Activate
+end
+Strings
+    Name                         Strings0
+    Alias                        ErrorCodeString
+    Alignment                    Left
+    BGcolor                      MAROON
+    Height                       38
+    FGcolor                      WHITE
+    Font.Bold                    No
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    '4D Font3 (8x12)'
+    Font.Opaque                  Yes
+    Font.Size                    12
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         148
+    Strings                      ''
+    StringsStyle                 Message
+    Top                          48
+    Width                        405
+    OnChanged                    ''
+end
+StaticText
+    Name                         Statictext11
+    Alias                        ErrorCodeLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Error Code:'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         20
+    Top                          52
+    Transparent                  Yes
+    Width                        108
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext12
+    Alias                        DescriptionLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Description:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         20
+    Top                          188
+    Transparent                  Yes
+    Width                        111
+    WordWrap                     Yes
+end
+Strings
+    Name                         Strings2
+    Alias                        DescriptionString
+    Alignment                    Left
+    BGcolor                      MAROON
+    Height                       200
+    FGcolor                      WHITE
+    Font.Bold                    No
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    '4D Font3 (8x12)'
+    Font.Opaque                  Yes
+    Font.Size                    12
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         152
+    Strings                      1111111111111111111111111\n222222222222222222222222\n3333333333333333\n444444444444444444444444\n55555555555555555555555\n\n
+    StringsStyle                 Book
+    Top                          184
+    Width                        500
+    OnChanged                    ''
+end

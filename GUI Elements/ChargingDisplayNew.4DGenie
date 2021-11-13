@@ -1,0 +1,718 @@
+﻿Version     0.0
+Platform    Gen4-uLCD-50DCT-CLB-L
+PlatRes     480x800
+Depends
+end
+Options
+    Genie
+    Speed                        200000
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  1
+    DestBank                     0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+    MaxString                    75
+    ComPort                      0
+    ComTX1pinIdx                 0
+    ComRX1pinIdx                 0
+    FileSystem                   FATfs
+    FlashEraseOption             Optimal
+    SPIenable                    0
+    SPIsdo                       3
+    SPIsdi                       2
+    SPIsck                       1
+    FlashGT16MB                  No
+end
+Form
+    Name                         Form0
+    Alias                        Form0
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits0
+    Alias                        PVoltageDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          24
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits1
+    Alias                        ChargeCurrentDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          108
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits2
+    Alias                        MaxTempDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          200
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits3
+    Alias                        SOCDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          292
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits4
+    Alias                        AvgVoltageDigit
+    Color                        BLACK
+    Decimals                     3
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         16
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          380
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext0
+    Alias                        PVoltageLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Pack Voltage'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          28
+    Transparent                  Yes
+    Width                        70
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext1
+    Alias                        ChargeCurrentLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Charge Current'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          112
+    Transparent                  Yes
+    Width                        74
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext2
+    Alias                        MaxTempLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Highest Temp'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          224
+    Transparent                  Yes
+    Width                        185
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext3
+    Alias                        SOCLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'SOC %'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          316
+    Transparent                  Yes
+    Width                        97
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext4
+    Alias                        AvgVoltageLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Avg Voltage'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         160
+    Top                          384
+    Transparent                  Yes
+    Width                        70
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext5
+    Alias                        CellDeltaLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Cell Δ'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         639
+    Top                          49
+    Transparent                  Yes
+    Width                        99
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits5
+    Alias                        CellDeltaDigit
+    Color                        BLACK
+    Decimals                     3
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         495
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          25
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+LedDigits
+    Name                         Leddigits6
+    Alias                        LowCellDigit
+    Color                        BLACK
+    Decimals                     3
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         495
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          109
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext6
+    Alias                        LowCellLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Low Cell'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         639
+    Top                          133
+    Transparent                  Yes
+    Width                        78
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext7
+    Alias                        HighCellLbel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'High Cell'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         639
+    Top                          225
+    Transparent                  Yes
+    Width                        84
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits7
+    Alias                        HighCellDigit
+    Color                        BLACK
+    Decimals                     3
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         495
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          201
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext8
+    Alias                        BalanceEnableLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Balance Enable'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         368
+    Top                          192
+    Transparent                  Yes
+    Width                        80
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext9
+    Alias                        ChargeEnableLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Charge Enable'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       50
+    Left                         576
+    Top                          276
+    Transparent                  Yes
+    Width                        74
+    WordWrap                     Yes
+end
+4Dbutton
+    Name                         4Dbutton0
+    Alias                        StopButton
+    Height                       64
+    Left                         352
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         64x64
+    Style                        Red
+    Top                          12
+    Type                         Button02
+    Width                        64
+    OnChanged                    ''
+end
+StaticText
+    Name                         Statictext10
+    Alias                        StopLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      STOP
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         360
+    Top                          80
+    Transparent                  Yes
+    Width                        51
+    WordWrap                     Yes
+end
+4Dbutton
+    Name                         4Dbutton1
+    Alias                        NextPageButton
+    Height                       48
+    Left                         740
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          424
+    Type                         Button01
+    Width                        48
+    OnChanged                    Form1Activate
+end
+4Dbutton
+    Name                         4Dbutton3
+    Alias                        4Dbutton3
+    Height                       48
+    Left                         312
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Blue
+    Top                          196
+    Type                         Button02
+    Width                        48
+    OnChanged                    ''
+end
+4Dbutton
+    Name                         4Dbutton4
+    Alias                        4Dbutton4
+    Height                       48
+    Left                         508
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Blue
+    Top                          276
+    Type                         Button02
+    Width                        48
+    OnChanged                    ''
+end
+UserLed
+    Name                         Userled0
+    Alias                        DischargeLED
+    Active                       No
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             clBtnFace
+    Bevel.InnerHighlight         clLime
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            0x005100
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             None
+    Bevel.Innerwidth             1
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                Yes
+    Height                       31
+    Left                         512
+    OutlineColor                 BLACK
+    OutlineWidth                 0
+    PaletteEx.High1              clRed
+    PaletteEx.High2              BLACK
+    PaletteEx.Low1               0x000051
+    PaletteEx.Low2               BLACK
+    Top                          348
+    Width                        43
+    OnChanged                    ''
+end
+UserLed
+    Name                         Userled1
+    Alias                        ChargeLED
+    Active                       No
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             clBtnFace
+    Bevel.InnerHighlight         clLime
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            0x005100
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             None
+    Bevel.Innerwidth             1
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                Yes
+    Height                       31
+    Left                         512
+    OutlineColor                 BLACK
+    OutlineWidth                 0
+    PaletteEx.High1              clRed
+    PaletteEx.High2              BLACK
+    PaletteEx.Low1               0x000051
+    PaletteEx.Low2               BLACK
+    Top                          404
+    Width                        43
+    OnChanged                    ''
+end
+StaticText
+    Name                         Statictext13
+    Alias                        Statictext13
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Discharge
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         576
+    Top                          352
+    Transparent                  Yes
+    Width                        92
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext14
+    Alias                        Statictext14
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Charge
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         576
+    Top                          408
+    Transparent                  Yes
+    Width                        67
+    WordWrap                     Yes
+end
+LedDigits
+    Name                         Leddigits8
+    Alias                        AHrDigit
+    Color                        BLACK
+    Decimals                     1
+    Digits                       4
+    Height                       52
+    LeadingZero                  Yes
+    Left                         260
+    OutlineColor                 BLACK
+    Palette.High                 clLime
+    Palette.Low                  BLACK
+    Top                          112
+    Width                        140
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext15
+    Alias                        Statictext15
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'A Hr'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         404
+    Top                          136
+    Transparent                  Yes
+    Width                        42
+    WordWrap                     Yes
+end
+Form
+    Name                         Form1
+    Alias                        Form1
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+4Dbutton
+    Name                         4Dbutton2
+    Alias                        PrevPageButton
+    Height                       48
+    Left                         8
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          428
+    Type                         Button01
+    Width                        48
+    OnChanged                    Form0Activate
+end
+Strings
+    Name                         Strings0
+    Alias                        ErrorCodeString
+    Alignment                    Left
+    BGcolor                      MAROON
+    Height                       38
+    FGcolor                      WHITE
+    Font.Bold                    No
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    '4D Font3 (8x12)'
+    Font.Opaque                  Yes
+    Font.Size                    12
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         148
+    Strings                      '1.	P0A0C – Highest Cell Voltage Too High Fault\n\n2.	P0A0E – Lowest Cell Voltage Too Low Fault\n\n\n3.	P0A10 – Pack Too Hot Fault\n\n\n4.	P0A0F – Cell ASIC Fault \nSubcode: 100- 11F\n\n5.	P0A0F – Cell ASIC Fault\nSubcode: 200- 21F\n\n6.	P0A0F – Cell ASIC Fault\nSubcode: 300-31F\n\n7.	P0ACA – Charge Interlock Fault\n\n\n8.	P0A0D – Cell Voltage Over 5 Volts\n\n\n9.	P0A04 – Open Wiring Fault (or “Open Cell Voltage Fault”)\n\n10.	P0A03 – Pack Voltage Mismatch Error\n\n\n11.	P0A80 – Weak Cell Fault\n\n\n12.	P0A0B – Internal Software Fault\n\n\n13.	P0A0A – Internal Heatsink Thermistor Fault\n\n\n14.	P0A09 – Internal Hardware Fault\n\n\n15.	P0A12 – Cell Balancing Stuck Off\n\n\n16.	P0AC0 – Current Sensor Fault\nSubcode 1\n\n17.	P0AC0 – Current Sensor Fault\nSubcode 2\n\n18.	P0AC0 – Current Sensor Fault\nSubcode 3\n\n19.	P0AC0 – Current Sensor Fault\nSubcode 4\n\n20.	P0AC0 – Current Sensor Fault\nSubcode 5\n\n21.	P0A1F – Internal Cell Communication Fault\n\n\n22.	P0AFA – Low Cell Voltage Fault\n\n\n23.	P0AA6 – High Voltage Isolation Fault\n\n\n24.	P0A01 – Pack Voltage Sensor Fault\n\n\n25.	P0A02 – Weak Pack Fault\n\n\n26.	P0A81 – Fan Monitor Fault\n\n\n27.	U0100 – External Communication Fault\nSubcode 1-F\n\n28.	U0100 – External Communication Fault\nSubcode 10\n\n29.	U0100 – External Communication Fault\nSubcode 11\n\n30.	U0100 – External Communication Fault\nSubcode 100-2F0\n\n31.	P0560 – Redundant Power Supply Fault\nSubcode 1\n\n32.	P0560 – Redundant Power Supply Fault\nSubcode 2\n\n33.	P0A05 – Input Power Supply Fault\nSubcode 1\n\n34.	P0A05 – Input Power Supply Fault\nSubcode 2\n\n35.	P0A06 – Charge Limit Enforcement Fault\nSubcode 1\n\n36.	P0A06 – Charge Limit Enforcement Fault\nSubcode 2\n\n37.	P0A07 – Discharge Limit Enforcement Fault\nSubcode 1\n\n38.	P0A07 – Discharge Limit Enforcement Fault\nSubcode 2\n\n39.	P0A08 – Charger Safety Relay Fault\nSubcode 1\n\n40.	P0A08 – Charger Safety Relay Fault\nSubcode 2\n\n41.	P0A9C – Battery Thermistor Fault\nSubcode 1-8\n\n42.	P0A9C – Battery Thermistor Fault\nSubcode 100-10A\n\n43.	P0A9C – Battery Thermistor Fault\nSubcode: 300-30A\n\n44.	P0A9C – Battery Thermistor Fault\nSubcode 1000\n'
+    StringsStyle                 Book
+    Top                          48
+    Width                        405
+    OnChanged                    ''
+end
+StaticText
+    Name                         Statictext11
+    Alias                        ErrorCodeLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Error Code:'
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         20
+    Top                          52
+    Transparent                  Yes
+    Width                        108
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext12
+    Alias                        DescriptionLabel
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Description:
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    16
+    Font.Style                   []
+    Height                       25
+    Left                         20
+    Top                          188
+    Transparent                  Yes
+    Width                        111
+    WordWrap                     Yes
+end
+Strings
+    Name                         Strings2
+    Alias                        DescriptionString
+    Alignment                    Left
+    BGcolor                      MAROON
+    Height                       200
+    FGcolor                      WHITE
+    Font.Bold                    No
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    '4D Font3 (8x12)'
+    Font.Opaque                  Yes
+    Font.Size                    12
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         152
+    Strings                      '1: One or more cell voltages are measured above\nprogrammed maximum allowed cell voltage.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2: One or more cell voltages are measured below\nthe programmed minimum allowed cell voltage.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3: Pack temperature exceeds maximum allowed\ntemperature for more than 30 seconds.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4: Internal ASIC power supply #1 is insufficiently\nlow in voltage. This can be caused by having\ntoo few cells loaded on a populated cell\ngroup on the Standard Orion BMS.\n\n\n\n\n\n\n\n\n\n\n\n\n5.	Internal ASIC power supply #2 is insufficiently low in voltage. This can be caused by having too few cells loaded on a populated cell group on the Standard Orion BMS.\n\n\n\n\n\n\n\n\n\n\n\n\n\n6.	Internal ASIC voltage reference is out of range. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7.	The BMS has determined that both Charge Power and Ready Power are energized at the same time (vehicle attempting to drive away while plugged in). \n\n\n\n\n\n\n\n\n\n\n\n\n\n8.	One or more cell voltages are measured above 5.0vDC \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9.	An open or high resistance connection was detected by the BMS on one or more cell tap wires.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10.	 The voltage measured by the total pack voltage sensor did not match the sum of the individual cell voltage measurements.\n\n\n\n\n\n\n\n\n\n\n\n\n\n11.	Battery cell determined to be abnormally weak, underperforming, out of balance or low in capacity. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12.	Internal software logic fault within the BMS \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n13.	Internal thermistor fault within the BMS \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14.	Internal hardware fault within the BMS \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n15.	Cell Balancing Circuit stuck off on one or more cells. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n16.	The BMS has determined that the current sensor is either unplugged (disconnected) or that the current being run through the sensor is exceeding the maximum ratings for the sensor (maxing out the sensor by over saturation). \n\n\n\n\n\n\n\n\n\n\n\n\n17.	An abnormal relationship between the two channels inside the current sensor was detected. Current sensor channel wires may be switched OR the wrong current sensor may be selected. (Hall Effect Sensors Only) \n\n\n\n\n\n\n\n\n\n\n\n\n18.	The polarity (directionality) of the current sensor appears to be reversed or installed backwards. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n19.	An abnormal relationship between the two channels inside the current sensor was detected. Current sensor channel wires may be switched OR the wrong current sensor may be selected. (Hall Effect Sensors Only) \n\n\n\n\n\n\n\n\n\n\n\n\n20.	Current Sensor 5v Power Source Fault. Current Sensor wires may be shorted. (Hall Effect Sensors Only) \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n21.	An internal communication fault (cell voltage measurement) was detected. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n22.	One or more cell voltages are measured as being dangerously low or zero. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n23.	Significant isolation breakdown between the high voltage battery pack assembly and logic ground is detected. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n24.	The total pack voltage sensor reads zero volts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n25.	Pack health has dropped below a programmed minimum value \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n26.	Battery blower fan monitor fault detected. Measured fan voltage does not correspond with expected voltage range\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n27.	Expected CANBUS keep-alive message was not received within expected timeframe. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n28.	CANBUS communications have been lost between this BMS and the Slave BMS (CANBUS multi-unit series communication). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n29.	CANBUS communications have been lost between this BMS and the Master BMS (CANBUS multi-unit series communication). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n30.	External communications have been lost between this BMS and the Remote Module. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n31.	Always On Power (Pin 1) is not energized when the power supply is enabled in the BMS profile settings. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n32.	Always On Power (Pin 1) is energized AND Ignition Signal (Pin 13) is energized but neither Ready Power (Pin 2) nor Charge Power (Pin 3) are energized.\n\n\n\n\n\n\n\n\n\n\n\n\n\n33.	Input power supply voltage to the BMS is too low\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n34.	Input power supply voltage to the BMS is too high\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n35.	The BMS has detected charge current entering the battery that exceeds the published Charge Current Limit (Charge Enable Relay is NOT enabled in the configuration settings). \n\n\n\n\n\n\n\n\n\n\n\n\n36.	The BMS has detected charge current entering the battery after Charge Enable Relay output has been turned off (Charge Enable Relay IS enabled in the configuration settings). \n\n\n\n\n\n\n\n\n\n\n\n\n37.	The BMS has detected discharge current leaving the battery that exceeds the published Discharge Current Limit (Discharge Enable Relay is NOT enabled in the configuration settings).\n\n\n\n\n\n\n\n\n\n\n\n\n38.	The BMS has detected discharge current leaving the battery after Discharge Enable Relay output has been turned off (Discharge Enable Relay IS enabled in the configuration settings). \n\n\n\n\n\n\n\n\n\n\n\n\n39.	The BMS has detected charge current entering the battery that exceeds the published Charge Current Limit (Charger Safety Relay is NOT enabled in the configuration settings). \n\n\n\n\n\n\n\n\n\n\n\n\n40.	2 The BMS has detected charge current entering the battery after Charger Safety Relay output has been turned off (Charger Safety Relay IS enabled in the configuration settings). \n\n\n\n\n\n\n\n\n\n\n\n\n41.	P0A9C – Battery Thermistor Fault\nOne or more thermistors are in fault state (the subcode indicates which thermistor ID) \n\n\n\n\n\n\n\n\n\n\n\n\n\n42.	CANBUS communication was lost with an enabled external Thermistor Expansion Module (TEM). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n43.	A thermistor fault was detected on external Thermistor Expansion Module (TEM). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n44.	An internal error occurred in the thermistor processing logic onboard the BMS.\n\n'
+    StringsStyle                 Book
+    Top                          184
+    Width                        500
+    OnChanged                    ''
+end
